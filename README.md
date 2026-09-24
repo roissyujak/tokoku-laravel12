@@ -3,7 +3,7 @@
 **Pemrograman Website Berbasis Framework: Konsep, Implementasi, dan Deployment Menggunakan Laravel 12**
 Ahmad Rois Syujak, M.Kom. — Program Studi Teknologi Informasi, Fakultas Sains dan Teknologi, UIN Salatiga (2026)
 
-TokoKu adalah aplikasi toko online sederhana yang dibangun bertahap sepanjang buku, dari Bab 2 sampai Bab 11. Repositori ini adalah project Laravel 12 lengkap (tanpa folder `vendor` dan `node_modules`) supaya kamu bisa menjalankannya langsung dan membandingkannya dengan hasil latihanmu.
+TokoKu adalah aplikasi toko online sederhana (**Laravel 12**) yang dibangun bertahap sepanjang buku, dari Bab 2 sampai Bab 11. Repositori ini adalah project Laravel 12 lengkap (tanpa folder `vendor` dan `node_modules`) supaya kamu bisa menjalankannya langsung dan membandingkannya dengan hasil latihanmu.
 
 ---
 
@@ -121,6 +121,9 @@ php artisan test
 4. Untuk production: `APP_DEBUG=false` dan `APP_ENV=production`.
 
 ## 🔄 Riwayat Versi
+
+**v1.2.1**
+- Repositori dikunci ke **Laravel 12** (`laravel/framework ^12.0`, PHP 8.2 atau lebih baru) agar sesuai dengan buku. Versi sebelumnya (v1.2.0 dan lebih lama) tanpa sengaja memakai Laravel 13 dan sudah dihapus.
 
 **v1.2**
 - Layout TokoKu diganti nama menjadi `layouts/main.blade.php` agar tidak tertimpa Laravel Breeze; `layouts/app.blade.php` kembali menjadi layout asli Breeze (dipakai halaman profil).
