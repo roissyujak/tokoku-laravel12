@@ -101,7 +101,7 @@ php artisan test
 | 3 | Routing dan Controller | `routes/web.php`, `ProductController.php` |
 | 4 | Model dan ORM | `Product.php`, `Category.php`, migration |
 | 5 | Relasi dan CRUD | relasi model, seeder, factory |
-| 6 | Blade | `layouts/app.blade.php`, `components/` |
+| 6 | Blade | `layouts/main.blade.php`, `components/` |
 | 7 | Form dan validasi | `_form.blade.php`, `Requests/` |
 | 8 | Autentikasi dan otorisasi | Breeze, `RoleMiddleware`, `ProductPolicy` |
 | 9 | Fitur tambahan | pagination, pencarian, filter, Mailable |
