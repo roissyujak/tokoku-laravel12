@@ -49,7 +49,7 @@ TokoKu adalah aplikasi toko online sederhana yang dibangun bertahap sepanjang bu
 ## 🚀 Instalasi
 
 ```bash
-git clone https://github.com/USERNAME/tokoku-laravel12.git
+git clone https://github.com/roissyujak/tokoku-laravel12.git
 cd tokoku-laravel12
 
 composer install
@@ -65,10 +65,15 @@ Buat database `tokoku` di MySQL/MariaDB, lalu atur `.env`:
 APP_NAME=TokoKu
 APP_URL=http://localhost:8000
 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=tokoku
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
+> Laravel 12 memakai SQLite secara default. Pastikan `DB_CONNECTION=mysql` dan baris `DB_*` **tidak** diawali tanda `#`.
 
 ```bash
 php artisan migrate:fresh --seed
@@ -116,6 +121,10 @@ php artisan test
 4. Untuk production: `APP_DEBUG=false` dan `APP_ENV=production`.
 
 ## 🔄 Riwayat Versi
+
+**v1.2**
+- Layout TokoKu diganti nama menjadi `layouts/main.blade.php` agar tidak tertimpa Laravel Breeze; `layouts/app.blade.php` kembali menjadi layout asli Breeze (dipakai halaman profil).
+- README: URL `git clone` dan konfigurasi `.env` (`DB_CONNECTION=mysql`) diperbaiki.
 
 **v1.1**
 - Tambah kolom `products.user_id` (migration `..._000005`) agar `ProductPolicy` bekerja: seller hanya boleh mengubah produk miliknya.
